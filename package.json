@@ -8,7 +8,7 @@
     "email": "akib4418@gmail.com"
   },
   "scripts": {
-    "test": "node index.js",
+    "test": "node ./src/hellow.js",
     "dev": "nodemon index.js"
   },
   "license": "MIT",
