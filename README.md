@@ -6,3 +6,8 @@
 yarn install
 yarn run dev
 ```
+
+## Some notes
+
+- CI - Merge code in
+- CD - Deploy code out
