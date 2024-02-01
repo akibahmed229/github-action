@@ -8,7 +8,7 @@
     "email": "akib4418@gmail.com"
   },
   "scripts": {
-    "start": "node index.js",
+    "test": "node index.js",
     "dev": "nodemon index.js"
   },
   "license": "MIT",
