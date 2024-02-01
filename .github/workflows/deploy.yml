@@ -20,10 +20,10 @@ jobs:
       - uses: actions/setup-node@main
         with:
           node-version: 19
+          # automatically delete the branch after the workflow runs
+          retention-days: 7
+
       # install dependencies (like yarn install)
       - run: yarn install
       - run: yarn run test
       # - run: yarn run test
-
-      # automatically delete the branch after the workflow runs
-      retention-days: 7
