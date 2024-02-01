@@ -11,3 +11,8 @@ yarn run dev
 
 - CI - Merge code in
 - CD - Deploy code out
+
+## TODO
+
+- [ ] act CLI - local testing
+- [ ] gh CLI - production stuff
