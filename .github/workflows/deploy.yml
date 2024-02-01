@@ -26,4 +26,4 @@ jobs:
       # - run: yarn run test
 
       # automatically delete the branch after the workflow runs
-      retentions-days: 7
+      retention-days: 7
