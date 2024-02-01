@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     # steps to run
     steps:
-      # bring source code into the current working directory to run tests on it
+      # bring source code into repository into the container to run tests on it
       - uses: actions/checkout@main
       # install node
       - uses: actions/setup-node@main
@@ -24,3 +24,10 @@ jobs:
       - run: yarn install
       - run: yarn run test
       # - run: yarn run test
+
+      # automatically delete the branch after the workflow runs
+      retentions:
+        days: 7
+        count: 10
+        artifacts: false
+        expire_in: 1w

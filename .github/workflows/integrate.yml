@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     # steps to run
     steps:
-      # bring source code into the current working directory to run tests on it
+      # bring source code into repository into the container to run tests on it
       - uses: actions/checkout@v2
       # install node
       - uses: actions/setup-node@v1
