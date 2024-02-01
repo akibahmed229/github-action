@@ -25,5 +25,5 @@ jobs:
           node-version: 19
       # install dependencies (like yarn install)
       - run: yarn install
-      - run: yarn test
+      - run: yarn run test
       - run: yarn run dev
