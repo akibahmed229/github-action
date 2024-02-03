@@ -20,7 +20,6 @@ jobs:
       - uses: actions/setup-node@main
         with:
           node-version: 19
-
       # install dependencies (like yarn install)
       - run: yarn install
       - run: yarn run test

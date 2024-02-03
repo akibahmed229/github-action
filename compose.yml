@@ -1,0 +1,22 @@
+# specify the version of the docker compose
+version: "2.23.1"
+
+# define the services that will be used in the workflow
+services:
+  # define the service name
+  backend:
+    # specify the image to use
+    image: node:latest
+    # specify the ports to expose
+    ports:
+      - 5000:5000
+    # specify the working directory
+    working_dir: /app
+    # specify the environment variables
+    environment:
+      - NODE_ENV=development
+    # specify the volumes to mount
+    volumes:
+      - .:/app
+    # specify the command to run
+    command: yarn run dev

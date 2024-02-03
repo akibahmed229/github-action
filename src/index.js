@@ -12,6 +12,12 @@ app.get("/", (req, res) => {
     message: "Hello World!!!",
   });
 });
+app.get("/user", (req, res) => {
+  return res.status(200).json({
+    success: true,
+    message: "Hello USER!!!",
+  });
+});
 
 // client error
 app.use((req, res, next) => {
